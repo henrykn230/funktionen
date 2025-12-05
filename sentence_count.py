@@ -1,6 +1,6 @@
 def count_sentences(text):
     with open(text, 'r', encoding='utf-8') as file:
-        inhalt = file.read()
-        print(inhalt)
+        content = file.read()
+        print(content)
 
 count_sentences("datei.txt")
