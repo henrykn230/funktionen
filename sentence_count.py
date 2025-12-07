@@ -1,10 +1,21 @@
+import os
+
 def count_sentences(text):
+    os.system('cls')
     with open(text, 'r', encoding='utf-8') as file:
         content = file.read()
         print(content)
     
-    sentences = content.strip().split(".")
-    sentences = [s for s in sentences if s.strip()]
+    sentences1 = content.strip().split(".")
+    sentences1.pop()
+
+    sentences2 = content.strip().split("!")
+    sentences2.pop()
+
+    sentences3 = content.strip().split("?")
+    sentences3.pop()
+
+    sentences = sentences1 + sentences2 + sentences3
     
     return len(sentences)
 
