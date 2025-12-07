@@ -2,9 +2,9 @@ import os
 
 def count_sentences(text):
     os.system('cls')
-    with open(text, 'r', encoding='utf-8') as file:
-        content = file.read()
-        print(content)
+    file = open(text, 'r', encoding='utf-8')
+    content = file.read()
+    print(content)
     
     sentences1 = content.strip().split(".")
     sentences1.pop()
