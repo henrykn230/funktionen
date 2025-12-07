@@ -2,8 +2,7 @@ import os
 
 def count_sentences(text):
     os.system('cls')
-    file = open(text, 'r', encoding='utf-8')
-    content = file.read()
+    content = open(text, 'r', encoding='utf-8').read()
     print(content)
     
     sentences1 = content.strip().split(".")
@@ -21,3 +20,4 @@ def count_sentences(text):
 
 anzahl = count_sentences("datei.txt")
 print(f"Anzahl der Sätze: {anzahl}")
+
