@@ -20,4 +20,5 @@ def count_sentences(text):
 
 anzahl = count_sentences("datei.txt")
 print(f"\nAnzahl der Sätze: {anzahl}")
+#Skibidi
 
