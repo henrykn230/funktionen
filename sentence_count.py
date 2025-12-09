@@ -19,5 +19,5 @@ def count_sentences(text):
     return len(sentences)
 
 anzahl = count_sentences("datei.txt")
-print(f"Anzahl der Sätze: {anzahl}")
+print(f"\nAnzahl der Sätze: {anzahl}")
 
