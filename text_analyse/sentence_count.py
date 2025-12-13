@@ -2,8 +2,9 @@ import os
 
 def count_sentences(text):
     os.system('clear')
-    content = open(text, 'r', encoding='utf-8').read()
-    print(content)
+    with open(text, 'r', encoding='utf-8') as file:
+        content = file.read()
+        print(content)
 
     sentences = 0
 
@@ -11,5 +12,4 @@ def count_sentences(text):
         if char in [".", "?", "!"]:
             sentences += 1
 
-    
     return sentences
